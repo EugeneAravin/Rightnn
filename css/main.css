@@ -1,0 +1,1026 @@
+body {
+	padding: 0;
+	margin: 0;
+	color: #fff;
+	background: url(../img/bg2.png);
+	-webkit-background-size: 105%;
+	background-size: 103%;
+}
+
+div, span, a, button, form, p {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	box-sizing: border-box;
+	font-weight: bold;
+	margin: 0;
+}
+
+textarea:focus, input:focus, button:focus {
+    outline: none;
+}
+
+ul, li {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	position: relative;
+}
+
+* {
+	transition: all ease 0.3s;
+}
+
+.d-flex {
+ display: -webkit-flex;
+ display: -moz-flex;
+ display: -ms-flex;
+ display: -o-flex;
+ display: flex;
+}
+
+.justify-content-btween {
+ justify-content: space-between;
+}
+
+.justify-content-start {
+ justify-content: flex-start;
+}
+
+.justify-content-end {
+ justify-content: flex-end;
+}
+
+.direction-column {
+ flex-direction: column;
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.text-align-center {
+	text-align: center;
+}
+
+/*Fonts*/
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('../fonts/GothamPro-BoldItalic.eot');
+	src: local('../fonts/Gotham Pro Bold Italic'), local('GothamPro-BoldItalic'),
+		url('../fonts/GothamPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro-BoldItalic.woff') format('woff'),
+		url('../fonts/GothamPro-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('../fonts/GothamPro-Italic.eot');
+	src: local('../fonts/Gotham Pro Italic'), local('GothamPro-Italic'),
+		url('GothamPro-Italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro-Italic.woff') format('woff'),
+		url('../fonts/GothamPro-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('../fonts/GothamPro-Medium.eot');
+	src: local('../fonts/Gotham Pro Medium'), local('GothamPro-Medium'),
+		url('../fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro-Medium.woff') format('woff'),
+		url('../fonts/GothamPro-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('../fonts/GothamPro-BlackItalic.eot');
+	src: local('../fonts/Gotham Pro Black Italic'), local('GothamPro-BlackItalic'),
+		url('../fonts/GothamPro-BlackItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro-BlackItalic.woff') format('woff'),
+		url('../fonts/GothamPro-BlackItalic.ttf') format('truetype');
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('../fonts/GothamPro-Bold.eot');
+	src: local('../fonts/Gotham Pro Bold'), local('GothamPro-Bold'),
+		url('../fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro-Bold.woff') format('woff'),
+		url('../fonts/GothamPro-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Pro Narrow';
+	src: url('../fonts/GothamProNarrow-Bold.eot');
+	src: local('../fonts/Gotham Pro Narrow Bold'), local('GothamProNarrow-Bold'),
+		url('../fonts/GothamProNarrow-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamProNarrow-Bold.woff') format('woff'),
+		url('../fonts/GothamProNarrow-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Pro Narrow';
+	src: url('../fonts/GothamProNarrow-Medium.eot');
+	src: local('../fonts/Gotham Pro Narrow Medium'), local('GothamProNarrow-Medium'),
+		url('../fonts/GothamProNarrow-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamProNarrow-Medium.woff') format('woff'),
+		url('../fonts/GothamProNarrow-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('../fonts/GothamPro-LightItalic.eot');
+	src: local('../fonts/Gotham Pro Light Italic'), local('GothamPro-LightItalic'),
+		url('../fonts/GothamPro-LightItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro-LightItalic.woff') format('woff'),
+		url('../fonts/GothamPro-LightItalic.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('../fonts/GothamPro-Light.eot');
+	src: local('../fonts/Gotham Pro Light'), local('GothamPro-Light'),
+		url('../fonts/GothamPro-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro-Light.woff') format('woff'),
+		url('../fonts/GothamPro-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('../fonts/GothamPro-Black.eot');
+	src: local('../fonts/Gotham Pro Black'), local('GothamPro-Black'),
+		url('../fonts/GothamPro-Black.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro-Black.woff') format('woff'),
+		url('../fonts/GothamPro-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('../fonts/GothamPro.eot');
+	src: local('../fonts/Gotham Pro'), local('GothamPro'),
+		url('../fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro.woff') format('woff'),
+		url('../fonts/GothamPro.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('../fonts/GothamPro-MediumItalic.eot');
+	src: local('../fonts/Gotham Pro Medium Italic'), local('GothamPro-MediumItalic'),
+		url('../fonts/GothamPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro-MediumItalic.woff') format('woff'),
+		url('../fonts/GothamPro-MediumItalic.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
+}
+
+/*Header*/
+.header {
+	background: url(../img/bg1.png);
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: auto;
+	position: relative;
+	max-height: 843px;
+}
+
+.header__top {
+	padding-top: 50px;
+}
+
+.header__top_number {
+	padding-left: 20px;
+	width: 195px;
+	height: 17px;
+	color: #980059;
+	font-family: "Gotham Pro";
+	font-size: 24px;
+	font-weight: 500;
+	vertical-align: middle;
+}
+
+.header__top_phone2 {
+	display: none;
+}
+
+.header__main {
+	margin-top: 135px;
+}
+
+.header__main_top {
+	color: #ffffff;
+	font-family: "Gotham Pro";
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 1.3em;
+}
+
+.header__main_middle {
+	display: inline-block;
+	margin-top: 15px;
+	color: #ffffff;
+	font-family: "Gotham Pro";
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 1.3em;
+}
+
+.header__main_block {
+	margin-top: 15px;
+	width: 234px;
+	height: 7px;
+	background-color: #ffffff;
+}
+
+.header__main_bottom {
+	display: inline-block;
+	margin-top: 28px;
+	width: 486px;
+	height: 60px;
+	color: #ffffff;
+	font-family: "Gotham Pro";
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.header__main_button {
+	margin-top: 45px;
+	margin-bottom: 170px;
+	padding: 18px;
+	display: inline-block;
+	color: #ffffff;
+	font-family: "Gotham Pro";
+	border: 5px solid #fff;
+	border-radius: 50px;
+	cursor: pointer;
+	box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+}
+
+.header__main_button:hover {
+	color: #ffffff;
+	text-decoration: none;
+	box-shadow: inset 0 0 25px rgba(0,0,0,0.5);
+} 
+
+.header__main_man {
+	position: absolute;
+	top: 0;
+	right: 20%;
+}
+
+/*Help*/
+.help {
+	padding-bottom: 190px;
+}
+
+.help__title {
+	color: #000000;
+	font-family: "Gotham Pro";
+	font-size: 48px;
+	font-weight: 700;
+	padding-top: 95px;
+	padding-bottom: 40px;
+}
+
+.help__item {
+	padding-bottom: : -10px;
+	padding-left: 10px;
+	position: relative;
+}
+
+.help__items .col-md::after {
+	position: absolute;
+	bottom: -15px;
+	left: 0;
+	content: '';
+	width: 250px;
+	height: 8px;
+	background-color: #a90b6a;
+}
+
+.help__items .col-md::before {
+	content: '';
+	border-radius: 50%;
+	position: absolute;
+	bottom: -26px;
+	left: 0;
+	width: 31px;
+	height: 31px;
+	background-color: #a90b6a;
+}
+
+.help__items .col-md:last-child:after {
+	position: absolute;
+	bottom: -15px;
+	left: 0;
+	content: '';
+	width: 150px;
+	height: 8px;
+	background-color: #a90b6a;
+}
+
+.help__items .col-md:first-child:before {
+	content: '';
+	border: 11px solid #a90b6a;
+	position: absolute;
+	bottom: -26px;
+	left: 0;
+	width: 31px;
+	height: 31px;;
+	background-color: #fff;
+	z-index: 1;
+}
+
+.help__item span {
+	position: absolute;
+    top: 110px;
+    left: 20px;
+	font-family: "Gotham Pro";
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.2em;
+}
+
+/*Proceture*/
+.procedure {
+
+}
+
+.procedure__block {
+	margin-left: 10%;
+	width: 90%;
+	background-color: #f7f7f7;
+	border-left: 30px solid #f0f0f0;
+	border-top: 30px solid #f0f0f0;
+}
+
+.procedure__title {
+	color: #000000;
+	font-family: "Gotham Pro";
+	font-size: 48px;
+	font-weight: 700;
+	padding-top: 110px;
+}
+
+.procedure__text {
+	color: #a90b6a;
+	font-family: "Gotham Pro";
+	font-size: 24px;
+	font-weight: 700;
+	padding-bottom: 55px;
+}
+
+.procedure__img {
+	padding-bottom: 70px;
+}
+
+.procedure__ul {
+	padding-top: 5px;
+	padding-left: 20px;
+	position: relative;
+}
+
+.procedure__ul li {
+	padding-bottom: 10px;
+	color: #000000;
+	font-family: "Gotham Pro";
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.procedure__ul li::before {
+  position: absolute;
+  left: 7px;
+  content: "-";
+}
+
+.procedire__container {
+	width: 420px;
+	height: 150px;
+	border: 3px solid #a90b6a;
+	margin-left: 20px;
+	margin-top: -60px;
+	justify-content: center;
+}
+.procedire__container p {
+	text-align: center;
+}
+
+.procedire__container_center {
+	margin-top: 6%;
+}
+
+.procedire__container_title {
+	color: #000000;
+	font-family: "Gotham Pro";
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 0;
+	padding-bottom: 10px;
+}
+
+.procedire__container_line {
+	width: 131px;
+	height: 2px;
+	background-color: #a90b6a;
+	margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.procedire__container_text {
+	color: #000000;
+	font-family: "Gotham Pro";
+	font-size: 18px;
+	font-weight: 300;
+}
+
+/*Order*/
+.order {
+	margin-bottom: 18px;
+}
+
+.order__block {
+	margin-right: 25%;
+	width: 75%;
+	background-color: #a90b6a;
+	box-shadow: 15px 20px 0px #910658;
+}
+
+.form {
+	margin-left: 25%;
+	margin-bottom: 70px;
+}
+
+.form__title_first {
+	margin-top: 50px;
+	line-height: 1.2em;
+	color: #ffffff;
+	font-family: "Gotham Pro";
+	font-size: 36px;
+	font-weight: 700;
+}
+
+.form__title_second {
+	color: #ffffff;
+	font-family: "Gotham Pro";
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 1.1em;
+}
+
+.order__input {
+	border-radius: 30px;
+	padding: 10px 30px 10px 30px;
+	background: unset;
+	color: #fff;
+	border: 2px solid #fff;
+	margin-bottom: 15px;
+	width: 80%;
+}
+
+input::placeholder {
+	color: #ffffff;
+	font-family: "Gotham Pro";
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.order__btn {
+	border-radius: 30px;
+	padding: 10px 30px 10px 30px;
+	background: #fff;
+	color: #000;
+	border: 2px solid #fff;
+	margin-bottom: 15px;
+	width: 80%;
+	margin-top: 10px;
+	box-shadow: 0px 0px 10px #910658;
+	cursor: pointer;
+}
+
+.order__btn:hover {
+	box-shadow: 10px 10px 50px #910658;
+}
+
+.order__btn:focus {
+	box-shadow: inset 0px 0px 10px #910658;
+	outline: none;
+}
+
+.form__img {
+	text-align: center;
+	margin-top: 25%;
+	margin-left: 5%;
+}
+
+/*Why*/
+.why__title {
+	margin-top: 85px;
+	margin-bottom: 65px;
+	color: #000000;
+	font-family: "Gotham Pro";
+	font-size: 48px;
+	font-weight: 700;
+}
+
+.why__li_item {
+	text-align: center;
+}
+
+.why__li_item p {
+	margin-top: 15px;
+}
+
+.why__li_item:before {
+	content: '';
+    height: 155px;
+    border: 1px solid #a90b6a;
+    position: absolute;
+    left: 0;
+}
+
+.why__li_item_first:before {
+	content: '';
+	border: none;
+}
+
+.order-second {
+
+}
+
+.order-second__block {
+
+}
+
+.order-second__title {
+	color: #000000;
+	font-family: "Gotham Pro";
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 1.2em;
+}
+
+.ordes-second__line {
+	width: 175px;
+	height: 13px;
+	background-color: #a80b6a;
+}
+
+.order-second img {
+	padding-top: 45%;
+}
+
+.form-second {
+	width: 406px;
+	height: 207px;
+	border: 4px solid #a80b6a;
+	margin-left: unset;
+    margin-bottom: unset;
+    margin-top: 8%;
+    padding: 25px 30px 30px 30px;
+}
+
+.order-second__input {
+	border-radius: 30px;
+	padding: 7px 30px 7px 30px;
+	background: unset;
+	color: #000;
+	border: 1px solid #000;
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+.order-second__input::placeholder {
+	color: #000;
+	font-family: "Gotham Pro";
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.order-second__btn {
+	background: #910658;
+	border: none;
+	color: #fff;
+	box-shadow: unset;
+	width: 100%;
+	padding: 7px 30px 7px 30px;
+	margin-top: 0;
+}
+
+.order-second__btn:hover {
+	box-shadow: unset;
+}
+
+.order-second__btn:focus {
+	box-shadow: inset 0px 0px 10px #32041f;
+}
+
+.order-second__block {
+	margin-left: 10%;
+    width: 90%;
+    background-color: #f7f7f7;
+    border-left: 30px solid #f0f0f0;
+    border-top: 30px solid #f0f0f0;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-top: 50px;
+}
+
+/*Persona*/
+.persona__block {
+	margin-right: 25%;
+	width: 75%;
+	background-color: #a90b6a;
+	box-shadow: 15px 20px 0px #910658;
+	padding-top: 75px;
+	padding-bottom: 75px;
+}
+
+.persona__block img {
+
+}
+
+.persona__text {
+
+}
+.persona__line {
+	width: 192px;
+	height: 3px;
+	background-color: #ffffff;
+	margin-bottom: 32px;
+}
+
+.persona__text h2 {
+	color: #ffffff;
+	font-family: "Gotham Pro";
+	font-size: 36px;
+	font-weight: 700;
+}
+
+.persona__text p {
+	color: #fff;
+	font-family: "Gotham Pro";
+	font-size: 18px;
+	font-weight: 300;
+	margin-bottom: 0;
+}
+
+.persona__text p:last-child {
+	margin-top: 20px;
+}
+
+/*Cases*/
+.cases {
+	margin-top: 87px;
+}
+
+.cases__col {
+	margin-left: auto;
+}
+
+.cases__item {
+	/*width: 45%;*/
+	background: url(../img/case1.png) no-repeat left center;
+	padding-left: 190px;
+	padding-top: 55px;
+	height: 200px;
+	margin-bottom: 25px;
+}
+
+.cases__text {
+	color: #000000;
+	font-family: "Gotham Pro";
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.cases__item_case2 {
+	background: url(../img/case2.png) no-repeat left center;
+}
+
+.cases__item_case3 {
+	background: url(../img/case3.png) no-repeat left center;
+}
+.cases__item_case4 {
+	background: url(../img/case4.png) no-repeat left center;
+}
+
+/*Reviews*/
+.reviews {
+	margin-bottom: 65px;
+}
+
+.reviews__h2 {
+	color: #000000;
+	font-family: "Gotham Pro";
+	font-size: 36px;
+	font-weight: 700;
+	margin-top: 60px;
+}
+
+.reviews__line {
+	width: 88px;
+	height: 7px;
+	background-color: #a80b6a;
+	margin-bottom: 40px;
+}
+
+
+/*Slider*/
+.sl__block{
+	max-width: 699px;
+	height: 268px;
+	box-shadow: 2px 1px 8px rgba(0, 0, 0, 0.33);
+	background-color: #a90b6a;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.sl__slide {
+	text-align: center;
+}
+
+.sl__slide img {
+	display: inline-block !important;
+}
+
+.sl__block_name {
+	color: #ffffff;
+	font-family: "Gotham Pro";
+	font-size: 24px;
+	font-weight: 700;
+	text-align: left;
+	padding-top: 50px;
+	padding-left: 50px;
+}
+
+.sl__block_text {
+	color: #ffffff;
+	font-family: "Gotham Pro";
+	font-size: 18px;
+	font-weight: 300;
+	text-align: left;
+	width: 600px;
+	padding-left: 50px;
+}
+
+.sl__container {
+	position: relative;
+	height: 270px;
+	width: 100%;
+}
+
+.left {
+	position: absolute;
+    top: 110px;
+    left: -30px;
+    cursor: pointer;
+}
+
+.right {
+	position: absolute;
+    top: 110px;
+    right: -30px;
+    cursor: pointer;
+}
+
+/*Certificate*/
+.certificate {
+
+}
+
+.certificate__h2 {
+	color: #000000;
+	font-family: "Gotham Pro";
+	font-size: 36px;
+	font-weight: 700;
+}
+
+.certificate__line {
+	width: 88px;
+	height: 7px;
+	background-color: #a80b6a;
+	margin-bottom: 45px;
+}
+
+.sl__slide_certificate img {
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.left_certificate {
+	position: absolute;
+    top: 250px;
+    left: 0;
+    cursor: pointer;
+}
+
+.right_certificate {
+	position: absolute;
+    top: 250px;
+    right: 0;
+    cursor: pointer;
+}
+
+.slick-dots {
+	justify-content: center;
+    display: flex;
+}
+
+.slick-dots li {
+	display: inline-block;
+	padding-left: 20px;
+	padding-top: 25px;
+}
+
+.slick-dots li:first-child {
+	padding-left: 0;
+}
+
+.slick-dots li img:nth-child(1) {
+    display: block;
+}
+
+.slick-dots li img:nth-child(2) {
+    display: none;
+}
+
+.slick-dots li.slick-active img:nth-child(1) {
+    display: none;
+}
+
+.slick-dots li.slick-active img:nth-child(2) {
+    display: block;
+}
+
+.certificate__container-right {
+	margin-left: 178px;
+}
+
+.certificate__span {
+	color: #000000;
+	font-family: "Gotham Pro";
+	font-size: 36px;
+	font-weight: 700;
+	margin: 0;
+}
+
+.certificate__text {
+	color: #000000;
+	font-family: "Gotham Pro";
+	font-size: 18px;
+	font-weight: 300;
+	margin-bottom: 40px;
+}
+
+.certificate__p_line {
+	width: 88px;
+	height: 7px;
+	background-color: #a80b6a;
+	margin-bottom: 17px;
+}
+
+.form-last {
+	width: 320px;
+	margin-left: unset;
+	margin-bottom: unset;
+}
+
+.order-last__input {
+	border-radius: 30px;
+	padding: 7px 30px 7px 30px;
+	background: unset;
+	color: #000;
+	border: 1px solid #000;
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+.order-last__input::placeholder {
+	color: #000;
+	font-family: "Gotham Pro";
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.order-last__btn {
+	background: #910658;
+	border: none;
+	color: #fff;
+	box-shadow: unset;
+	width: 100%;
+	padding: 7px 30px 7px 30px;
+	margin-top: 0;
+}
+
+.order-last__btn:hover {
+	box-shadow: none;
+}
+
+.order-last__btn:focus {
+	box-shadow: inset 0px 0px 10px #32041f;
+}
+
+/*Footer*/
+.footer {
+	margin-top: 50px;
+	background: #a90b6a left left;
+	-webkit-background-size: 80%;
+	background-size: 80%;
+}
+
+.footer__ul {
+	margin-top: 43%;
+}
+
+.footer__item {
+
+}
+
+.footer__item:nth-child(2) {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.footer__right {
+	height: 352px;
+	box-shadow: 825px 0px 0px #a90b6a;
+	background-color: #a90b6a;
+}
+
+.footer__right_title {
+	color: #ffffff;
+	font-family: "Gotham Pro";
+	font-size: 36px;
+	font-weight: 700;
+	margin-left: 90px;
+	padding-top: 60px;
+}
+
+.footer__right_line {
+	width: 95px;
+	height: 7px;
+	background-color: #ffffff;
+	margin-left: 90px;
+	margin-bottom: 40px;
+}
+
+.footer__adress {
+	color: #ffffff;
+	font-family: "Gotham Pro";
+	font-size: 18px;
+	font-weight: 300;
+	margin-left: 170px;
+	background: url(../img/mark.png) no-repeat left center;
+	padding-left: 35px;
+} 
+
+.footer__number {
+	color: #ffffff;
+	font-family: "Gotham Pro";
+	font-size: 18px;
+	font-weight: 300;
+	margin-left: 170px;
+	background: url(../img/phone2.png) no-repeat left center;
+	padding-left: 35px;
+}
+
+.footer__ul_media {
+	display: none;
+}
